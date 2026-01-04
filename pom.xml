@@ -5,14 +5,14 @@
          http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.aimockdata</groupId>
+    <groupId>io.github.palsure</groupId>
     <artifactId>mock-data-gen</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>AI Mock Data Generator</name>
+    <name>Mock Data Generator</name>
     <description>AI-powered mock data generation tool supporting multiple output formats</description>
-    <url>https://github.com/palsure/ai-mock-data-gen</url>
+    <url>https://github.com/palsure/mock-data-gen</url>
     
     <licenses>
         <license>
@@ -30,9 +30,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/palsure/ai-mock-data-gen.git</connection>
-        <developerConnection>scm:git:ssh://github.com:palsure/ai-mock-data-gen.git</developerConnection>
-        <url>https://github.com/palsure/ai-mock-data-gen/tree/main</url>
+        <connection>scm:git:git://github.com/palsure/mock-data-gen.git</connection>
+        <developerConnection>scm:git:ssh://github.com:palsure/mock-data-gen.git</developerConnection>
+        <url>https://github.com/palsure/mock-data-gen/tree/main</url>
     </scm>
 
     <properties>
@@ -173,6 +173,7 @@
                         </goals>
                         <configuration>
                             <skip>${gpg.skip}</skip>
+                            <skipNoJavadoc>false</skipNoJavadoc>
                         </configuration>
                     </execution>
                 </executions>
